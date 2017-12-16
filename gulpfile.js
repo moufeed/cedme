@@ -10,8 +10,8 @@ var gulp = require('gulp'),
     sourcemaps = require('gulp-sourcemaps'),
     autoprefixer = require('gulp-autoprefixer'),
     // uglify = require('gulp-uglify'); //es5
-    uglify = require('gulp-uglify-es').default; // es6
-
+    uglify = require('gulp-uglify-es').default, // es6
+    browserSync = require('browser-sync').create();
 
 var config = {
     header: '/*!\n* <%= pkg.name %> - v <%= pkg.version %> \n* <%= pkg.description %> \n* Author :<%= pkg.author %>\n*/\n\n',
@@ -37,7 +37,7 @@ var config = {
     js: {
         src: [
             './node_modules/jquery/dist/jquery.min.js',
-            './node_modules/popper.js/dist/popper.min.js',
+            './node_modules/popper.js/dist/umd/popper.js',
             './node_modules/bootstrap/dist/js/bootstrap.min.js',
             './node_modules/wowjs/dist/wow.min.js',
             './src/js/scripts.js'
@@ -81,7 +81,7 @@ var config = {
     }
 }
 
-
+ 
 
 // ----------------------------------------------------
 // -------------   handlebars/html  -------------------
@@ -98,7 +98,8 @@ gulp.task('hbs:ltr', function () {
         .pipe(rename({
             extname: '.html'
         }))
-        .pipe(gulp.dest('dist'));
+        .pipe(gulp.dest('dist'))
+        .pipe(browserSync.stream({once: true}));
 
 });
 
@@ -113,6 +114,7 @@ gulp.task('hbs:rtl', function () {
             extname: '.html'
         }))
         .pipe(gulp.dest('dist'))
+        .pipe(browserSync.stream({once: true}));
 });
 
 
@@ -136,13 +138,14 @@ gulp.task('style', function () {
         .pipe(autoprefixer(config.css.prefixerOptions))
         //  .pipe(sourcemaps.write(config.css.map))
         .pipe(gulp.dest(config.css.dist))
-
+        .pipe(browserSync.stream());
 })
 
 // ----------------------------------------------------
 // -----------------   javascript/js  -----------------
 // ----------------------------------------------------
 gulp.task('script', function () {
+    browserSync.notify("please wait");
     return gulp.src(config.js.src)
         .pipe(concat(config.js.file))
         .pipe(uglify({
@@ -157,10 +160,12 @@ gulp.task('script', function () {
         .pipe(header(config.header, {
             pkg: pkg
         }))
-        .pipe(gulp.dest(config.js.dist));
-})
+        .pipe(gulp.dest(config.js.dist))
+        .pipe(browserSync.stream());
+}) 
 
 gulp.task('slider', function () {
+    browserSync.notify("please wait");
     return gulp.src(config.slider.src)
         .pipe(concat(config.slider.file))
         .pipe(uglify({
@@ -192,14 +197,21 @@ gulp.task('slider', function () {
 // ---------------------------------------------------- 
 
 gulp.task('watch', function () {
+    browserSync.init({
+        port: 4300,
+        server: {
+            baseDir: "./dist" 
+        }
+    });
     gulp.watch(config.js.watch, ['script']);
     gulp.watch(config.css.src, ['style']);
     gulp.watch(config.html.watch, ['hbs']);
     gulp.watch(config.slider.src, ['slider']);
 })
+ 
 
 
-gulp.task('hbs', ['hbs:ltr', 'hbs:rtl']);
+gulp.task('hbs', ['hbs:ltr', 'hbs:rtl'] );
 gulp.task('default', ['script', 'style', 'hbs', 'watch']);
 
 

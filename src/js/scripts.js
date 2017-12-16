@@ -3,11 +3,11 @@ var wow = new WOW({
     animateClass: 'animated',
     offset: 10,
     mobile: true, 
-    live: true,
+    live: true, 
 
-});
+}); 
 wow.init();
 
 $(document).ready(function(){
      
-})
+}) ; 

@@ -1,0 +1,6 @@
+body{
+    @include if-rtl{
+        direction: rtl;
+        text-align: right;
+    }      
+} 
