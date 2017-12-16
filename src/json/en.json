@@ -1,3 +1,281 @@
 {
-    "dir":"ltr"
+    "dir": "ltr",
+    "pagetitle": "pagetitle",
+    "customers_service" :"customers services",
+    "contact_us" :"contact us ",
+    "our_services" :"our servisces",
+    "our_mission" :"our mission",
+    "our_vision" :"our vision",
+    "our_values" :"our values",
+    "who_are_we" :"about us ",
+    "our_news":"our news",
+    "our_projects":"our projects",
+    "name":"name",
+    "email":"Email",  
+    "full_name" :"full name",
+    "phone_number" :"Phone number",
+    "message" :"Message",
+    "mobile_number":"mobile number",
+    "send":"send",
+    "reset":"rest",
+    "subscribe":"subscribe",
+    "search" :"search",
+    "search_label":"search label",
+    "search_placeholder":"search placeholder",
+    "global_search" :"search", 
+    "advanced_search":"advanced search",
+    "result_found":"Results Found",
+    "search_results":"search results",
+    "phone":"phone",
+    "fax":"fax",
+    "mobile":"mobile",
+    "read_more":"Read More",
+    "about_us_text":"Our organization aims at realizing the meaning of comprehensive and integrated development. Our foundation was established in 2005 as a currency institution in the field of integrated contracting industry with a staff of 30 years. It joined the membership of Saudi contractors to start the process of participating in construction and supporting the integrated development process which we aspire to. We create value .. '",
+    "our_mession_text":"To meet the expectations of our customers, shareholders and employees. Our main principle is to build high quality projects for the entities we work with and for the community in which we work, by providing the highest levels of construction and construction. We seek to thrive to provide the latest building tools through our various professional teams, whose members are dedicated to making sure that the design support of any project is fully considered and implemented.",
+    "our_vision_text":"recognized as one of the highest leading companies and capable of delivering mega projects in the Kingdom and abroad with the highest quality while focusing on localizing jobs and transfer of technology",
+    "copy_right":"© 2018 Construction Edifices Development. All Rights Reserved.",
+    "design_and_develop":"Design and develop",
+    "we_build":"we are building",
+    "new_world":"The New World",
+    "navigation":[
+        {
+            "name": "home",
+            "link": "index.html"
+        },
+        {
+            "name": "about us",
+            "link": "aboutus.html"
+        },
+        {
+            "our_services":"services",
+            "link":"services.html"
+        },
+        {
+            "our_projects":"projects",
+            "link":"projects.html"
+        },
+        {
+            "name": "news",
+            "link": "news.html"
+        },
+        {
+            "name": "contact us",
+            "link": "contactus.html"
+        }
+    ],
+    "news_list":[
+        {
+            "name":"Contract of rehabilitation and finishing of the building of the taste restaurant",
+            "link":"blog.html",            
+            "date":"July 27, 2017",
+            "text":"The contract for the rehabilitation and finishing of Zouk Al Khayyala Restaurant Work place: Al Hamdawiya District - Jeddah Area: 1800 m 2 Duration: Six months",
+            "img":"1.jpg"
+        },
+        {
+            "name":"Contract for the establishment of the Saudi National Schools Project",
+            "link":"blog.html",            
+            "date":"April 01, 2017",
+            "text":"The establishment of the Saudi National Schools Project was held. First Party: Saudi National Schools Second Party: Al Sarhouh Construction Contracting Est. Type of Work: Bone in Materials Area: 16000 m 2 Duration: 5 months",
+            "img":"2.jpg"
+        },
+        {
+            "name":"The contract to construction of International Alqirwan Schools project",
+            "link":"blog.html",            
+            "date":"December 31, 2016 ",
+            "text":"The contract to construction of International Alqirwan Schools projectFirst Party : International Alqirwan SchoolsSecond Party : Construction Edifices Development Est. Work Type : Bone Material Area : 11,000 m2Duration…",
+            "img":"3.jpg"
+        },
+        {
+            "name":"SELAH TV Visit & Meetings",
+            "link":"blog.html",            
+            "date":"December 12, 2016",
+            "text":"SELAH TV visit Construction Edifices Development and the meeting of its executive director and administrative staff and its role in the Saudi construction sector",
+            "img":"4.jpg"
+        },
+        {
+            "name":"Establishment of Dar Al-Fikr Schools in Riyadh",
+            "link":"blog.html",            
+            "date":"October 23, 2016",
+            "text":"Establishment of Dar Al-Fikr Schools in Riyadh First Party: Dar Al-Fikr Schools Second Party: Al-Sarh Construction Development Corporation Delivery of Origin Meftah Kamel with materials of the finest raw materials from companies dedicated to each material Location:",
+            "img":"5.jpg"
+        },
+        {
+            "name":"Project Management Meeting",
+            "link":"blog.html",            
+            "date":"October 15, 2016",
+            "text":"Project Management Meeting 15 October 2016",
+            "img":"6.jpg"
+        },
+        {
+            "name":"Construction contract of Al-Manhal Boys and Girls Schools Complex",
+            "link":"blog.html",            
+            "date":"August 01, 2016",
+            "text":"The establishment of the project of Al Manhal National Schools Complex for Boys and Girls First Party: Al Manhal National Schools Company for Boys and Schools for the Disabled National Girls Ltd. Second Party:",
+            "img":"7.jpg"
+        },
+        {
+            "name":"Final Delivery Dom International Schools DOM / Riyadh - Director 5",
+            "link":"blog.html",            
+            "date":"August 01, 2016 ",
+            "text":"Final Delivery Dom International Schools DOM / Riyadh - Director 5 Duration: 12 months Project Type: Turnkey Area: 12000 m 2 Building Boys - 12000 m 2 Building Girls",
+            "img":"8.jpg"
+        },
+        {
+            "name":"Establishment of the National Initiative Schools Complex",
+            "link":"blog.html",            
+            "date":"August 01, 2016",
+            "text":"Completion of the contract for the establishment of the Ahlia Initiative Schools Complex All stages (elementary, preparatory, secondary) First party: Educational Initiative Company represented by Mr. Mesir Bin Shuqair Al Duwaisi",
+            "img":"9.jpg"
+        },
+        {
+            "name":"Hold a romantic restaurant establishment",
+            "link":"blog.html",            
+            "date":"August 01, 2016",
+            "text":"Construction of the romantic restaurant project First Party: Romance Co. Ltd. Second Party: Construction Development Corporation Delivery of Origin Key full of materials of the finest raw materials from companies dedicated to each material Place of origin -",
+            "img":"10.jpg"
+        },
+        {
+            "name":"Holding the construction of the schools of the beginning of the world",
+            "link":"blog.html",            
+            "date":"August 01, 2016",
+            "text":"Holding contract for the construction of the schools of the beginning of the world First party: Khalid bin Abdul Aziz Nasser Al Turki second party: the development of the construction of the foundations of the delivery of the origin of the full of materials of the finest raw materials from companies dedicated to each material place of origin -",
+            "img":"11.jpg"
+        },
+        {
+            "name":"Construction of Al Majd National Schools Complex",
+            "link":"blog.html",            
+            "date":"August 01, 2016",
+            "text":"Al-Majd Al-Ahlia Schools Complex Contract First Party: Bandar Bin Abdul Rahman Al-Sulaiman Taraf Tani: Development Establishment of Construction Scaffolding Delivery of Origin Meftah Kamel with materials of the finest raw materials from companies dedicated to each material Place of Establishment - Nimar District - Riyadh",
+            "img":"12.jpg"
+        },
+        {
+            "name":"Holding a villa",
+            "link":"blog.html",            
+            "date":"August 01, 2016",
+            "text":"Contract for the construction of a residential villa First Party: Bandar bin Abdul Rahman Al-Sulaiman Second Party: Foundation for the development of surfaces delivery of origin Mftah Kamel materials of the finest raw materials from companies dedicated to each material place of origin - Arijah district -",
+            "img":"13.jpg"
+        },
+        {
+            "name":"Meetings of the Foundation",
+            "link":"blog.html",            
+            "date":"July 31, 2016",
+            "text":"One of the internal meetings conducted by the Foundation to deal with the issues of work",
+            "img":"14.jpg"
+        },
+        {
+            "name":"Romantic restaurants in Jeddah",
+            "link":"blog.html",            
+            "date":"July 31, 2016",
+            "text":"Contract for the establishment of a romantic restaurant in Jeddah First party: Romance Co. Ltd. Second party: Foundation of the development of construction surfaces Delivery of the origin of the entire key materials of the finest raw materials from companies dedicated to each material place of origin - Sharqiya District - Jeddah This origin",
+            "img":"15.jpg"
+        }
+    ],
+    "our_projects_list":[
+        {
+            "name" :"Taste Restaurant",
+            "link" :"project.html",
+            "img":"1.jpg",
+            "text":"Duration: Eight months"
+        },
+        {
+            "name" :"Saudi National Schools",
+            "link" :"project.html",
+            "img":"2.jpg",
+            "text":"building structure"
+        }, {
+            "name" :"Dar Al-Shawamakh Educational Administration Building",
+            "link" :"project.html",
+            "img":"3.jpg",
+            "text":"key"
+        }, {
+            "name" :"Kairouan International Schools",
+            "link" :"project.html",
+            "img":"4.jpg",
+            "text":"building structure"
+        }, {
+            "name" :"Academy of Aeronautics",
+            "link" :"project.html",
+            "img":"5.jpg",
+            "text":"building structure"
+        }, {
+            "name" :"Dar El Fikr Schools Complex Project",
+            "link" :"project.html",
+            "img":"6.jpg",
+            "text":"key"
+        }, {
+            "name" :"Dom World Schools Project",
+            "link" :"project.html",
+            "img":"7.jpg",
+            "text":"مدة التنفيذ : 12 شهر"
+        }, {
+            "name" :"Restoration project of Villa exit 14",
+            "link" :"project.html",
+            "img":"8.jpg",
+            "text":"Project construction"
+        }, {
+            "name" :"Al - Majd Schools Rehabilitation Project",
+            "link" :"project.html",
+            "img":"9.jpg",
+            "text":"Under restoration"
+        }, {
+            "name" :"Romantic restaurant Jeddah",
+            "link" :"project.html",
+            "img":"10.jpg",
+            "text":"key"
+        }, {
+            "name" :"Romantic restaurant",
+            "link" :"project.html",
+            "img":"11.jpg",
+            "text":"key "
+        }, {
+            "name" :"Al - Sadara National School",
+            "link" :"project.html",
+            "img":"12.jpg",
+            "text":"key"
+        }, {
+            "name" :"Nayyar Private Schools",
+            "link" :"project.html",
+            "img":"13.jpg",
+            "text":"building structure"
+        }, {
+            "name" :" Al Safra National Schools",
+            "link" :"project.html",
+            "img":"14.jpg",
+            "text":"key"
+        }, {
+            "name" :"Al Rowad International Schools",
+            "link" :"project.html",
+            "img":"15.jpg",
+            "text":"key"
+        }, {
+            "name" :"National Generations Schools",
+            "link" :"project.html",
+            "img":"16.jpg",
+            "text":"key"
+        }, {
+            "name" :"Boys Learning Schools",
+            "link" :"project.html",
+            "img":"17.jpg",
+            "text":"building structure"
+        }, {
+            "name" :"National Solidarity Schools",
+            "link" :"project.html",
+            "img":"18.jpg",
+            "text":"building structure"
+        }
+    ],
+    "our_services_list":[
+        {
+            "name":"Design and construction",
+            "text":"Construction and finishing works of all residential and commercial buildings starting from the drilling through the work of finishing, electrical, mechanical and sanitary work. Integrated supervision of the implementation and receipt of works to ensure the quality of construction with the lowest costs"
+        },
+        {
+            "name":"Renovation of buildings",
+            "text":"<ol> <li> Renovation and consolidation of facilities, from repair and reinforcement of structural elements such as bases, columns and ceilings to the renovation of buildings, a comprehensive architectural renovation. </ li> <li> Modern insulation of heat, humidity and sound with the latest materials, as well as epoxy paints. </ Li> <li> Special finishes of palaces and villas that require a special level of finishes </ li> </ ol>"
+        },
+        {
+            "name":"Project management",
+            "text":"<ol> <li> <span> Integrated engineering design works (architectural & nbsp; - construction - electricity - mechanical health) and conducted by a group of consultants </ span> </ li> <li> Before construction, and to determine the estimated cost of the engineering projects as well as the implementation schedules, together with the financial flows involved. </ Span> </ li> </ span> </ li> </ li> span> Provide all engineering consultancy and provide innovative solutions for implementation in all types of facilities </ span> </ li> </ ol>"
+        }
+    ]
 }
