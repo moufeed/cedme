@@ -92,6 +92,9 @@ gulp.task('hbs:ltr', function () {
     return gulp.src(config.html.src)
     
         .pipe(handlebars(jsonData, config.html.options))
+        .on('error', function (err) {
+            gutil.log(gutil.colors.red('[Error]'), err.toString());
+        })
         .pipe(rename({
             extname: '.html'
         }))
@@ -102,7 +105,9 @@ gulp.task('hbs:ltr', function () {
 gulp.task('hbs:rtl', function () {
     return gulp.src(config.html.src)
         .pipe(handlebars(config.html.rtlData, config.html.options))
-
+        .on('error', function (err) {
+            gutil.log(gutil.colors.red('[Error]'), err.toString());
+        })
         .pipe(rename({
             suffix: '-rtl',
             extname: '.html'
@@ -119,6 +124,9 @@ gulp.task('style', function () {
     return gulp.src(config.css.src)
         // .pipe(sourcemaps.init())
         .pipe(sass(config.sassOptions).on('error', sass.logError))
+        .on('error', function (err) {
+            gutil.log(gutil.colors.red('[Error]'), err.toString());
+        })
         .pipe(rename({
             suffix: '.min'
         }))
