@@ -5,6 +5,7 @@
     "customers_service" :"customers services",
     "contact_us" :"contact us ",
     "contact":"contact us ",
+    "links":"links",
     "query_text":"Do you have a query? Contact us",
     "our_services" :"our servisces",
     "our_mission" :"our mission",
@@ -38,10 +39,12 @@
     "our_mession_text":"To meet the expectations of our customers, shareholders and employees. Our main principle is to build high quality projects for the entities we work with and for the community in which we work, by providing the highest levels of construction and construction. We seek to thrive to provide the latest building tools through our various professional teams, whose members are dedicated to making sure that the design support of any project is fully considered and implemented.",
     "our_vision_text":"recognized as one of the highest leading companies and capable of delivering mega projects in the Kingdom and abroad with the highest quality while focusing on localizing jobs and transfer of technology",
     "our_projects_text":"Our main principle is to build high quality projects for the entities we work with and for the community in which we work, by providing the highest levels of construction and construction. We seek to thrive to provide the latest building tools through our various professional teams",
+    "our_services_text":"Our main principle is to build high quality projects for the entities we work with and for the community in which we work, by providing the highest levels of construction and construction",
     "copy_right":"© 2018 Construction Edifices Development. All Rights Reserved.",
     "design_and_develop":"Design and develop",
     "we_build":"we are building",
     "new_world":"The New World",
+    "address_text" :"Riyadh - Khurais Road <br>Imam Al Shafei Street <br>PO Box : 51591. Riyadh ",
     "navigation":[
         {
             "name": "home",
@@ -278,14 +281,17 @@
     "our_services_list":[
         {
             "name":"Design and construction",
+            "img" :"1.jpg",
             "text":"Construction and finishing works of all residential and commercial buildings starting from the drilling through the work of finishing, electrical, mechanical and sanitary work. Integrated supervision of the implementation and receipt of works to ensure the quality of construction with the lowest costs"
         },
         {
             "name":"Renovation of buildings",
+            "img" :"2.jpg",
             "text":"<ol> <li> Renovation and consolidation of facilities, from repair and reinforcement of structural elements such as bases, columns and ceilings to the renovation of buildings, a comprehensive architectural renovation. </ li> <li> Modern insulation of heat, humidity and sound with the latest materials, as well as epoxy paints. </ Li> <li> Special finishes of palaces and villas that require a special level of finishes </ li> </ ol>"
         },
         {
             "name":"Project management",
+            "img" :"3.jpg",
             "text":"<ol> <li> <span> Integrated engineering design works (architectural & nbsp; - construction - electricity - mechanical health) and conducted by a group of consultants </ span> </ li> <li> Before construction, and to determine the estimated cost of the engineering projects as well as the implementation schedules, together with the financial flows involved. </ Span> </ li> </ span> </ li> </ li> span> Provide all engineering consultancy and provide innovative solutions for implementation in all types of facilities </ span> </ li> </ ol>"
         }
     ]

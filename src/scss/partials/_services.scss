@@ -1,0 +1,112 @@
+$sh:500px;
+.services-section {
+    .img-box {
+        @include size(100%, $sh);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        img {
+            height: 100%;
+        }
+    }
+}
+
+.services_list {
+    padding: 15px;
+    background:$dark url('#{$img}services-bg-1.png') 0 0 / auto 100% no-repeat;
+    min-height: $sh;
+    header {
+        padding: 15px 15px 0;
+        h3 {
+            color: $gold;
+            strong {
+                padding: 5px 0;
+                border-bottom: 2px solid $white;
+            }
+        }
+        p {
+            margin-top: 15px;
+            color: $white;
+            font-size: 16px;
+        }
+    }
+}
+
+
+.service-item {
+    position: relative;
+    &:before{
+        content :'';
+        opacity: 0;
+        @include absolute(top left right bottom , 0 0);    
+        transform: scale(1);
+        border: 1px solid $gold;
+        transition: all 0.35s;
+    }
+
+    figure{
+    overflow: hidden;
+    @include size(100% , $sh /2);
+    position: relative;
+    margin-top: rem(25px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: $gold;
+    img {
+        position: absolute;
+        height: 100%;
+        transition: all 0.35s;
+        min-width: 100%;
+    }
+    figcaption {
+        text-align: center;
+        z-index: 1;
+        h4 {
+            max-width: 100%;
+            padding:10px 5px;
+            font-size: rem(16px);
+            color: $dark;
+            margin: auto;
+            position: relative;
+            transition: all 0.35s;
+            &:after{
+                @include absolute(top left ,-3px);
+                content: '';
+                @include square(calc(100%  + 6px));
+                transition: all 0.35s;
+                border: 2px solid $dark;
+            }
+        }
+        a {
+            @include absolute(top left,0);
+            @include square(100%);
+            z-index: 1000;
+            text-indent: 200%;
+            white-space: nowrap;
+            font-size: 0;
+            opacity: 0;
+        }
+    }
+}
+&:hover{
+    &:before{
+        transform: scale(1.05);
+        opacity: 1;
+    }
+    img{
+        opacity: .4;
+        transform: scale(1.1);
+    }
+    h4 {
+       background:$gold;
+       color: $white;
+        &:after{
+
+            border-color:$gold;
+        }
+    }
+ }
+}

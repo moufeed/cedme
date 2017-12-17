@@ -1,0 +1,23 @@
+.main_footer{
+    background: $mblue;
+    color: $white;
+    h4{
+        @include if-rtl{
+            font-family:g-bold;
+        }
+        strong{
+           border-bottom: 2px solid $gold;
+           display: inline-block;
+           padding-#{$right}: 10px;
+           padding-bottom: 5px;
+        }
+    } 
+    .links-list{
+        padding: 0;
+        li{
+           a{
+            color: $gold; 
+           }
+        }
+    }
+}
