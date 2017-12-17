@@ -1,0 +1,20 @@
+
+#triangle_svg{
+    margin: 0;
+    margin-bottom: rem(-10px);
+    .des_st0{fill:$dark;}
+    .des_st1{fill:none;stroke:$gold;stroke-width:10;stroke-linejoin:bevel;stroke-miterlimit:10;}
+}
+
+.about-des{
+        background: $dark;
+        color: $white;
+    .row-des{
+        min-height: 350px;
+    }
+    p{
+        color: darken($white,10%);
+    }
+    
+}
+ 

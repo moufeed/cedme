@@ -10,7 +10,142 @@
 <body>
    
   {{>topbar}}   
- 
+  {{>navbar active='index'}}   
+  
+  {{>description}}
+  {{>latestprojects}}
+  {{>contact}} 
+  {{>map}}
+  {{>bottombar}}
 <script src="assets/js/script.min.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDQOA4-dMup6O_XDMJfFBd1Je93XoSxRRI"></script>
+    <script>
+
+    var mapStyle = [
+	{
+		"featureType": "landscape",
+		"stylers": [
+			{
+				"hue": "#FFBB00"
+			},
+			{
+				"saturation": 43.400000000000006
+			},
+			{
+				"lightness": 37.599999999999994
+			},
+			{
+				"gamma": 1
+			}
+		]
+	},
+	{
+		"featureType": "road.highway",
+		"stylers": [
+			{
+				"hue": "#FFC200"
+			},
+			{
+				"saturation": -61.8
+			},
+			{
+				"lightness": 45.599999999999994
+			},
+			{
+				"gamma": 1
+			}
+		]
+	},
+	{
+		"featureType": "road.arterial",
+		"stylers": [
+			{
+				"hue": "#FF0300"
+			},
+			{
+				"saturation": -100
+			},
+			{
+				"lightness": 51.19999999999999
+			},
+			{
+				"gamma": 1
+			}
+		]
+	},
+	{
+		"featureType": "road.local",
+		"stylers": [
+			{
+				"hue": "#FF0300"
+			},
+			{
+				"saturation": -100
+			},
+			{
+				"lightness": 52
+			},
+			{
+				"gamma": 1
+			}
+		]
+	},
+	{
+		"featureType": "water",
+		"stylers": [
+			{
+				"hue": "#0078FF"
+			},
+			{
+				"saturation": -13.200000000000003
+			},
+			{
+				"lightness": 2.4000000000000057
+			},
+			{
+				"gamma": 1
+			}
+		]
+	},
+	{
+		"featureType": "poi",
+		"stylers": [
+			{
+				"hue": "#00FF6A"
+			},
+			{
+				"saturation": -1.0989010989011234
+			},
+			{
+				"lightness": 11.200000000000017
+			},
+			{
+				"gamma": 1
+			}
+		]
+	}
+];
+      function initialize() {
+
+        var mapCanvas = document.getElementById('map');
+        var mapOptions = {
+          center: new google.maps.LatLng(22.526736, 40.731230),
+          zoom: 9,
+           styles: mapStyle,
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+        }
+        var map = new google.maps.Map(mapCanvas, mapOptions);
+         var image = 'assets/img/pin.png';
+		  var mapMarker = new google.maps.Marker({
+			position: {lat:22.526736, lng:40.731230},
+			map: map,
+			icon: image
+		  });
+      }
+
+      google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+
+
 </body> 
-</html> 
+</html>  

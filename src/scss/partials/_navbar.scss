@@ -1,0 +1,54 @@
+ .main-navbar{
+     background: rgba($black,.6);
+    .navbar {
+        padding: 0;
+        @include media-breakpoint-down(xs) { 
+            width: 100%;
+            padding: rem(15px);
+        }
+        .navbar-nav{
+            > li{
+             > a{
+                 color: $white;
+                 transition: all .3s;
+                 text-transform: capitalize; 
+                    font-family: if-rtl(g-medium);
+                @include media-breakpoint-up(md) { 
+                    padding: rem(20px) rem(15px); 
+                }  
+                &:hover{
+                    background: $gold;
+                    color: $white;
+                }
+             }
+             &.active{
+                 >a{
+                     background: rgba($gold,.7);
+                     color: $white;
+                 }
+             }
+            }
+        } 
+    }
+    
+ }    
+
+ /**
+ <div class="row justify-content-end">
+            <nav class="navbar navbar-expand-lg sticky-top navbar-light  ">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    {{#each navigation}}
+                            <li class="nav-item {{#isequal ../active active}}active{{/isequal}}">
+                                <a class="nav-link" href="{{link}}">{{name}}</a>
+                            </li>
+                    {{/each}}
+                </ul>
+            </div>
+            </nav>
+        </div>
+ 
+ */

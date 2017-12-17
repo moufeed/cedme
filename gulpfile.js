@@ -40,6 +40,7 @@ var config = {
             './node_modules/popper.js/dist/umd/popper.js',
             './node_modules/bootstrap/dist/js/bootstrap.min.js',
             './node_modules/wowjs/dist/wow.min.js',
+            './node_modules/jquery-parallax.js/parallax.min.js',
             './src/js/scripts.js'
         ],
         watch: './src/js/scripts.js',
@@ -183,14 +184,6 @@ gulp.task('slider', function () {
         .pipe(gulp.dest(config.slider.dist));
 
 })
-
-
-
-
-
-
- 
-
 
 // ----------------------------------------------------
 // -----------------   watch/files  -----------------

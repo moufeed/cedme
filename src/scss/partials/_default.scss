@@ -2,5 +2,30 @@ body{
     @include if-rtl{
         direction: rtl;
         text-align: right;
+        font-family: 'g-light' , $font-family-sans-serif;
     }      
 } 
+.number{
+    font-family:  $font-family-sans-serif;
+}
+.c-gold{
+    color: $gold;
+}
+.btn-outline-gold{
+    border-color:$gold;
+    color: $gold;
+    &:hover{
+        color: $white;
+        background-color: $gold;
+        border-color:$gold;
+    }
+}
+.btn-outline-white{
+    border-color:$white;
+    color: $white;
+    &:hover{
+        color: $gold;
+        background-color: $white;
+        border-color:$white;
+    }
+}

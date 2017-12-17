@@ -1,11 +1,14 @@
 {
     "dir": "ltr",
     "pagetitle": "pagetitle",
+    "menu" :"menu",
     "customers_service" :"customers services",
     "contact_us" :"contact us ",
+    "contact":"contact us ",
+    "query_text":"Do you have a query? Contact us",
     "our_services" :"our servisces",
     "our_mission" :"our mission",
-    "our_vision" :"our vision",
+    "our_vision" :"our vision", 
     "our_values" :"our values",
     "who_are_we" :"about us ",
     "our_news":"our news",
@@ -27,12 +30,14 @@
     "result_found":"Results Found",
     "search_results":"search results",
     "phone":"phone",
-    "fax":"fax",
+    "fax":"fax", 
     "mobile":"mobile",
     "read_more":"Read More",
-    "about_us_text":"Our organization aims at realizing the meaning of comprehensive and integrated development. Our foundation was established in 2005 as a currency institution in the field of integrated contracting industry with a staff of 30 years. It joined the membership of Saudi contractors to start the process of participating in construction and supporting the integrated development process which we aspire to. We create value .. '",
+    "des_title": "Our organization aims at realizing the meaning of comprehensive and integrated development.",
+    "about_us_text":" Our foundation was established in 2005 as a currency institution in the field of integrated contracting industry with a staff of 30 years. It joined the membership of Saudi contractors to start the process of participating in construction and supporting the integrated development process which we aspire to. We create value .. '",
     "our_mession_text":"To meet the expectations of our customers, shareholders and employees. Our main principle is to build high quality projects for the entities we work with and for the community in which we work, by providing the highest levels of construction and construction. We seek to thrive to provide the latest building tools through our various professional teams, whose members are dedicated to making sure that the design support of any project is fully considered and implemented.",
     "our_vision_text":"recognized as one of the highest leading companies and capable of delivering mega projects in the Kingdom and abroad with the highest quality while focusing on localizing jobs and transfer of technology",
+    "our_projects_text":"Our main principle is to build high quality projects for the entities we work with and for the community in which we work, by providing the highest levels of construction and construction. We seek to thrive to provide the latest building tools through our various professional teams",
     "copy_right":"© 2018 Construction Edifices Development. All Rights Reserved.",
     "design_and_develop":"Design and develop",
     "we_build":"we are building",
@@ -40,27 +45,33 @@
     "navigation":[
         {
             "name": "home",
-            "link": "index.html"
+            "link": "index.html",
+            "active":"index"
         },
         {
             "name": "about us",
-            "link": "aboutus.html"
+            "link": "aboutus.html",
+            "active":"aboutus"
         },
         {
-            "our_services":"services",
-            "link":"services.html"
+            "name":"services",
+            "link":"services.html",
+            "active":"services"
         },
         {
-            "our_projects":"projects",
-            "link":"projects.html"
+            "name":"projects",
+            "link":"projects.html",
+            "active":"projects"
         },
         {
             "name": "news",
-            "link": "news.html"
+            "link": "news.html",
+            "active":"news"
         },
         {
             "name": "contact us",
-            "link": "contactus.html"
+            "link": "contactus.html",
+            "active":"contactus"
         }
     ],
     "news_list":[

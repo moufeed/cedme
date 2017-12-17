@@ -1,0 +1,12 @@
+.copyrights{
+    background: $dblue;
+    .row{
+        height: 50px;
+    }
+    p{
+        color: darken($white ,10%);
+        small{
+            color: darken($white ,20%);
+        }
+    }
+}
