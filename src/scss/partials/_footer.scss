@@ -1,5 +1,5 @@
 .main_footer{
-    background: $mblue;
+    background: $mblue url('#{$img}footer-bg.png') 0 0 no-repeat;
     color: $white;
     h4{
         @include if-rtl{
@@ -14,10 +14,26 @@
     } 
     .links-list{
         padding: 0;
+        margin-top: rem(25px);
         li{
            a{
             color: $gold; 
            }
+        }
+    }
+    .info-list{
+        margin-top: rem(25px);
+        li{
+            margin-bottom: 5px;
+            .fa{
+                float: $left;
+                margin-#{$right}:rem(15px);
+                color: darken($white,15%); 
+                font-size: rem(16px);
+            }
+            address,span,a{
+                float: $left;
+            }
         }
     }
 }

@@ -1,7 +1,7 @@
-$sh:500px;
+
 .services-section {
     .img-box {
-        @include size(100%, $sh);
+        @include size(100%, $servicesHeight);
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -15,7 +15,7 @@ $sh:500px;
 .services_list {
     padding: 15px;
     background:$dark url('#{$img}services-bg-1.png') 0 0 / auto 100% no-repeat;
-    min-height: $sh;
+    min-height: $servicesHeight;
     header {
         padding: 15px 15px 0;
         h3 {
@@ -47,7 +47,7 @@ $sh:500px;
 
     figure{
     overflow: hidden;
-    @include size(100% , $sh /2);
+    @include size(100% , $servicesHeight /2);
     position: relative;
     margin-top: rem(25px);
     display: flex;

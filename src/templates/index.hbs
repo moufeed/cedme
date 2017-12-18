@@ -6,12 +6,16 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>{{pagetitle}}</title>
     <link rel="stylesheet" href="assets/css/style-{{dir}}.min.css">
+	 <link rel="stylesheet" href="assets/css/slider.min.css">
 </head>
 <body>
    
-  {{>topbar}}   
-  {{>navbar active='index'}}   
-  
+ <header class="main-header">
+	{{>topbar}}   
+  	{{>navbar active='index'}} 
+ </header>  
+
+  {{>slider}}
   {{>description}} 
   {{>latestprojects}}
   {{>services}}
@@ -21,6 +25,7 @@
   {{>bottombar}}
 
 <script src="assets/js/script.min.js"></script>
+ <script src="assets/js/slider.min.js"></script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDQOA4-dMup6O_XDMJfFBd1Je93XoSxRRI"></script>
     <script>
 

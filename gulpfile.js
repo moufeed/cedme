@@ -49,6 +49,8 @@ var config = {
     },
     slider: {
         src: [
+            './src/js/jquery.themepunch.tools.min.js',
+            './src/js/jquery.themepunch.revolution.min.js',
             './src/js/slider.js'
         ],
 
