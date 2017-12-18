@@ -1,0 +1,339 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{{pagetitle}}</title>
+    <link rel="stylesheet" href="assets/css/style-{{dir}}.min.css">
+     {{>loader}}
+</head> 
+<body>
+  
+<header class="main-header"  >
+	{{>topbar}}   
+  	{{>navbar active='contactus'}} 
+</header>  
+{{>pageheader image='contact-header.jpg' title=contact_us}}
+
+ 
+<section class="contact_us_text ">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-8 text-center ">
+               <p class=" animate fadeInUp"  data-wow-duration="600ms"  data-wow-duration="600ms" data-wow-delay="100ms"> {{contact_us_text}}</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="contact-form">
+    <div class="container-fluid p-0">
+        <div class="row no-gutters">
+            <div class="col-lg-4 c-info ">
+                    <article>
+                        <h4 class="c-tit"><strong>{{contact_info}}</strong></h4>
+                            <ul class="list-unstyled">
+                    <li class="clearfix">
+                        <i class="fa fa-map"></i>
+                        <address>
+                            {{{address_text}}}  
+                        </address>
+                    </li>
+                    <li class="clearfix">
+                        <i class="fa fa-clock-o"></i>
+                        <span class="number" dir="ltr">
+                                07:00 - 18:00
+                        </span>
+                    </li>
+                    <li class="clearfix">
+                        <i class="fa fa-phone-square"></i>
+                        <span class="number" dir="ltr">
+                              +966114452929
+                        </span>
+                    </li>
+                     <li class="clearfix">
+                        <i class="fa fa-fax"></i>
+                        <span class="number" dir="ltr">
+                              +966113254789
+                        </span>
+                    </li>
+                    <li class="clearfix">
+                        <i class="fa fa-envelope"></i>
+                        <a href="mailto:info@cedme.com">info@cedme.com</a>
+                    </li>
+                </ul>
+                <nav class="d-flex">
+                    <a href="">
+                            <i class="fa fa-facebook"></i>
+                        </a>
+                        <a href="">
+                            <i class="fa fa-twitter"></i>
+                        </a>
+                         <a href="">
+                            <i class="fa fa-youtube"></i>
+                        </a>
+                </nav>
+                 
+                    </article>
+        
+                   </div>
+
+            <div class="col-lg-8 c-form"> 
+                    <h4 class="c-tit gold"><strong>{{message_us}}</strong></h4> 
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+{{>map}}
+{{>footer}} 
+{{>bottombar}}
+
+<script src="assets/js/script.min.js"></script> 
+
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDQOA4-dMup6O_XDMJfFBd1Je93XoSxRRI"></script>
+    <script>
+
+    var mapStyle =  [
+    {
+        "featureType": "all",
+        "elementType": "labels.text.fill",
+        "stylers": [
+            {
+                "saturation": "0"
+            },
+            {
+                "color": "#211e20"
+            },
+            {
+                "lightness": "0"
+            }
+        ]
+    },
+    {
+        "featureType": "all",
+        "elementType": "labels.text.stroke",
+        "stylers": [
+            {
+                "visibility": "on"
+            },
+            {
+                "color": "#ffffff"
+            },
+            {
+                "lightness": 16
+            }
+        ]
+    },
+    {
+        "featureType": "all",
+        "elementType": "labels.icon",
+        "stylers": [
+            {
+                "visibility": "off"
+            }
+        ]
+    },
+    {
+        "featureType": "administrative",
+        "elementType": "geometry.fill",
+        "stylers": [
+            {
+                "color": "#fefefe"
+            },
+            {
+                "lightness": 20
+            }
+        ]
+    },
+    {
+        "featureType": "administrative",
+        "elementType": "geometry.stroke",
+        "stylers": [
+            {
+                "color": "#fefefe"
+            },
+            {
+                "lightness": 17
+            },
+            {
+                "weight": 1.2
+            }
+        ]
+    },
+    {
+        "featureType": "landscape",
+        "elementType": "geometry",
+        "stylers": [
+            {
+                "color": "#f5f5f5"
+            },
+            {
+                "lightness": 20
+            }
+        ]
+    },
+    {
+        "featureType": "poi",
+        "elementType": "geometry",
+        "stylers": [
+            {
+                "color": "#f5f5f5"
+            },
+            {
+                "lightness": 21
+            }
+        ]
+    },
+    {
+        "featureType": "poi",
+        "elementType": "labels.text.fill",
+        "stylers": [
+            {
+                "color": "#211e20"
+            },
+            {
+                "lightness": "45"
+            }
+        ]
+    },
+    {
+        "featureType": "poi.park",
+        "elementType": "geometry",
+        "stylers": [
+            {
+                "color": "#dedede"
+            },
+            {
+                "lightness": 21
+            }
+        ]
+    },
+    {
+        "featureType": "road",
+        "elementType": "labels.text.fill",
+        "stylers": [
+            {
+                "color": "#211e20"
+            },
+            {
+                "lightness": "20"
+            }
+        ]
+    },
+    {
+        "featureType": "road.highway",
+        "elementType": "geometry.fill",
+        "stylers": [
+            {
+                "color": "#ffd538"
+            },
+            {
+                "lightness": "0"
+            }
+        ]
+    },
+    {
+        "featureType": "road.highway",
+        "elementType": "geometry.stroke",
+        "stylers": [
+            {
+                "color": "#ffffff"
+            },
+            {
+                "lightness": 29
+            },
+            {
+                "weight": 0.2
+            }
+        ]
+    },
+    {
+        "featureType": "road.arterial",
+        "elementType": "geometry",
+        "stylers": [
+            {
+                "color": "#ffffff"
+            },
+            {
+                "lightness": 18
+            }
+        ]
+    },
+    {
+        "featureType": "road.local",
+        "elementType": "geometry",
+        "stylers": [
+            {
+                "color": "#ffffff"
+            },
+            {
+                "lightness": 16
+            }
+        ]
+    },
+    {
+        "featureType": "transit",
+        "elementType": "geometry",
+        "stylers": [
+            {
+                "color": "#f2f2f2"
+            },
+            {
+                "lightness": 19
+            }
+        ]
+    },
+    {
+        "featureType": "water",
+        "elementType": "geometry",
+        "stylers": [
+            {
+                "color": "#e9e9e9"
+            },
+            {
+                "lightness": 17
+            }
+        ]
+    },
+    {
+        "featureType": "water",
+        "elementType": "labels.text.fill",
+        "stylers": [
+            {
+                "color": "#211e20"
+            },
+            {
+                "lightness": "20"
+            }
+        ]
+    }
+];
+      function initialize() {
+
+        var mapCanvas = document.getElementById('map');
+        var mapOptions = {
+          center: new google.maps.LatLng(24.706767, 46.799025),
+          zoom: 13,
+           styles: mapStyle,
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+        }
+        var map = new google.maps.Map(mapCanvas, mapOptions);
+         var image = 'assets/img/pin.png';
+		  var mapMarker = new google.maps.Marker({
+			position: {lat:24.706767, lng:46.799025},
+			map: map,
+			icon: image
+		  });
+      }
+
+      google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+
+</body> 
+</html>  

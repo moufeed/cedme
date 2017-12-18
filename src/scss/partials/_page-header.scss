@@ -1,0 +1,50 @@
+.page-header{
+    position: relative;
+    &:after{
+        content:"";
+        @include absolute(top left,0);
+        @include square(100%);
+        background: rgba($black, 0.5) url('#{$img}dot.png');
+        z-index: 0;
+    } 
+    .container{
+        z-index: 1;
+        position: relative;
+    }
+    .row{
+        height: $page-header-height;
+    }
+    .breadcrumb{
+        background: transparent;
+        li{
+            a{
+                color: $white;
+            }
+            &.active{
+                color: $gold;
+                a{
+                    color: $gold;
+                }
+            }
+        } 
+    }
+
+    .page-title{
+        margin-bottom: 25px;
+        h1{
+            color: $white;
+            @include if-rtl{
+                font-family: g-bold; 
+            }
+            strong{
+                position: relative;
+                box-shadow: if-rtl(-10px , 10px) 10px 0 -1px rgba($gold ,.2);
+                background: rgba($gold ,.4);
+                display: inline-block;
+                padding: 5px 6px;
+            }
+        }
+         
+    }
+}   
+ 

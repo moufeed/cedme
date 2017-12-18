@@ -1,0 +1,101 @@
+.contact_us_text{
+    background: darken($white,10%) url('#{$img}contact_us_text-bg.png')0 0  no-repeat;
+     
+    padding: rem(100px) 0;
+    p {
+        font-size: rem(20px);
+        font-family: if-ltr(inherit,'g-medium');
+        color: $dark;
+        font-weight: 100;
+    }
+} 
+
+.contact-form{
+        .row.no-gutters{
+            height: 500px;
+        }
+        .c-form ,.c-info{
+            padding:rem(35px) rem(25px); 
+        }
+        .c-info{
+            background: $gold;
+            article{
+                margin-#{$left}: rem(50px);
+            }
+        }
+       
+}
+.c-tit{
+    color: $white;
+    margin: rem(15px) 0;
+    strong{
+        padding: rem(10px) rem(20px);
+        display: inline-block;
+        
+        position: relative;
+        background: url('#{$img}gold-line.png');
+        &:after{
+            z-index: -1;
+            content: '';
+            @include absolute(top left ,10px);
+            background: url('#{$img}gold-line.png');
+            @include square(100%);
+            opacity: .6;
+        }
+    }
+    &.gold{
+        color: $gold;
+        strong{
+            border-color: $gold;
+          
+        }
+    }
+} 
+ 
+/*
+<>
+                        <h4 class="c-tit"><strong>{{contact_info}}</strong></h4>
+                            <ul class="list-unstyled">
+                    <li class="clearfix">
+                        <i class="fa fa-map"></i>
+                        <address>
+                            {{{address_text}}}  
+                        </address>
+                    </li>
+                    <li class="clearfix">
+                        <i class="fa fa-clock-o"></i>
+                        <span class="number" dir="ltr">
+                                07:00 - 18:00
+                        </span>
+                    </li>
+                    <li class="clearfix">
+                        <i class="fa fa-phone-square"></i>
+                        <span class="number" dir="ltr">
+                              +966114452929
+                        </span>
+                    </li>
+                     <li class="clearfix">
+                        <i class="fa fa-fax"></i>
+                        <span class="number" dir="ltr">
+                              +966113254789
+                        </span>
+                    </li>
+                    <li class="clearfix">
+                        <i class="fa fa-envelope"></i>
+                        <a href="mailto:info@cedme.com">info@cedme.com</a>
+                    </li>
+                </ul>
+                <nav class="d-flex">
+                    <a href="">
+                            <i class="fa fa-facebook"></i>
+                        </a>
+                        <a href="">
+                            <i class="fa fa-twitter"></i>
+                        </a>
+                         <a href="">
+                            <i class="fa fa-youtube"></i>
+                        </a>
+                </nav>
+                 
+                    </>
+*/

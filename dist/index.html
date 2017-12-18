@@ -7,6 +7,20 @@
     <title>pagetitle</title>
     <link rel="stylesheet" href="assets/css/style-ltr.min.css">
 	 <link rel="stylesheet" href="assets/css/slider.min.css">
+	 
+	 <script src="assets/js/queryloader2.min.js" ></script>
+	 <script type="text/javascript">
+	     window.addEventListener('DOMContentLoaded', function() {
+	         QueryLoader2(document.querySelector("body"), {
+	             barColor: "#b6a939",
+	             backgroundColor: "#fff",
+	             percentage: true,
+	             barHeight: 2,
+	             minimumTime: 200,
+	             fadeOutTime: 1000
+	         });
+	     });
+	 </script></script>
 </head>
 <body>
    
@@ -472,15 +486,15 @@
 
         var mapCanvas = document.getElementById('map');
         var mapOptions = {
-          center: new google.maps.LatLng(22.526736, 40.731230),
-          zoom: 12,
+          center: new google.maps.LatLng(24.706767, 46.799025),
+          zoom: 13,
            styles: mapStyle,
           mapTypeId: google.maps.MapTypeId.ROADMAP
         }
         var map = new google.maps.Map(mapCanvas, mapOptions);
          var image = 'assets/img/pin.png';
 		  var mapMarker = new google.maps.Marker({
-			position: {lat:22.526736, lng:40.731230},
+			position: {lat:24.706767, lng: 46.799025},
 			map: map,
 			icon: image
 		  });
