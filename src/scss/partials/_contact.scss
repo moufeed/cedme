@@ -1,5 +1,8 @@
 .contact-sec{
     background: $gold;
+    @include media-breakpoint-down(xs) { 
+        text-align: center;
+    }
     .row{
         height: 100px;
     }
@@ -8,6 +11,9 @@
         margin: 0;
         font-size: 24px;
         color: $white;
+        @include media-breakpoint-down(xs) { 
+            font-size: 16px;
+        }
     }
     .btn{
         padding: 6px 25px;

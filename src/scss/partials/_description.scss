@@ -10,6 +10,10 @@
     top: -5px;
     height: 150px;
     width: 100%;
+    @include media-breakpoint-down(md) { 
+        height: 75px;
+   }
+   
 }
 
 .about-des{
@@ -18,6 +22,10 @@
         margin-top: -13px;
     .row-des{
         min-height: 350px;
+        @include media-breakpoint-down(md) { 
+             padding-top: 25px;
+             padding-bottom: 25px;
+        }
     }
     p{
         color: darken($white,10%);

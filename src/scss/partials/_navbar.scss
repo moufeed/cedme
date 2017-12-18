@@ -1,12 +1,23 @@
  .main-navbar{
      background: rgba($black,.6);
+     @include media-breakpoint-down(xs) { 
+        background: rgba($black,.8);
+    }
     .navbar {
         padding: 0;
         @include media-breakpoint-down(xs) { 
             width: 100%;
             padding: rem(15px);
         }
+        .navbar-toggler{
+            color: $white;
+            border-color: $white;
+            padding:10px 15px;
+        }
         .navbar-nav{
+            @include media-breakpoint-down(xs) { 
+                text-align: center;
+            }
             > li{
              > a{
                  color: $white;
@@ -32,23 +43,4 @@
     }
     
  }    
-
- /**
- <div class="row justify-content-end">
-            <nav class="navbar navbar-expand-lg sticky-top navbar-light  ">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    {{#each navigation}}
-                            <li class="nav-item {{#isequal ../active active}}active{{/isequal}}">
-                                <a class="nav-link" href="{{link}}">{{name}}</a>
-                            </li>
-                    {{/each}}
-                </ul>
-            </div>
-            </nav>
-        </div>
  
- */

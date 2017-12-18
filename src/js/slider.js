@@ -9,7 +9,7 @@
              arrows: { 
                  enable: true,
                  style: "hades",
-                 hide_onleave: false,
+                 hide_onleave: true,
                  tmp: '<div class="tp-arr-allwrapper"><div class="tp-arr-imgholder"></div></div>'
              },
              bullets: {

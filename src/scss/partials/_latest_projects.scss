@@ -35,6 +35,9 @@
             }
          .img{
             @include size(100%,350px);
+            @include media-breakpoint-only(md) { 
+                height: 210px;
+            }
             margin-bottom: 25px;
             overflow: hidden;
             cursor: pointer;
