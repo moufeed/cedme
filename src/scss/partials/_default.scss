@@ -3,8 +3,28 @@ body{
         direction: rtl;
         text-align: right;
         font-family: 'g-light' , $font-family-sans-serif;
-    }      
+    }   
+       
 } 
+h1,h2,h3{
+    @include if-ltr{
+        font-family: 'semi-dosis' , $font-family-sans-serif;
+        text-transform: capitalize;
+    }
+    @include if-rtl{
+        font-family: g-bold , $font-family-sans-serif;
+    }
+}
+h4,h5,h6{
+    @include if-ltr{
+        font-family: dosis , $font-family-sans-serif;
+        text-transform: capitalize;
+    }
+    @include if-ltr{
+        font-family: g-medium , $font-family-sans-serif;
+    }
+}
+
 @include selection{
     background: $dark;
     color: $gold;

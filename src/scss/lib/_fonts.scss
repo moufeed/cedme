@@ -6,9 +6,14 @@
   } 
 }
 
-//   @include if-ltr{
-//    @include font('hos', '#{$font}en/Hand_Of_Sean.ttf');
-//   } 
+  @include if-ltr{
+   @include font('dosis', '#{$font}en/Dosis/Dosis-Regular.ttf');
+   @include font('semi-dosis', '#{$font}en/Dosis/Dosis-SemiBold.ttf');
+
+   @include font('Roboto', '#{$font}en/Roboto/Roboto-Light.ttf');
+   @include font('bold-roboto', '#{$font}en/Roboto/Roboto-Bold.ttf');
+
+  } 
   @include if-rtl{
     @include font('g-light', '#{$font}ar/GE_SS_Text_Light.otf');
     @include font('g-medium', '#{$font}ar/GE_SS_Text_Medium.otf');
