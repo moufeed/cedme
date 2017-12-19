@@ -1,7 +1,7 @@
 .copyrights{
     background: $dblue;
     .row{
-        height: 50px;
+        min-height: 50px;
     }
     p{
         color: darken($white ,10%);

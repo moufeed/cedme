@@ -5,6 +5,10 @@ body{
         font-family: 'g-light' , $font-family-sans-serif;
     }      
 } 
+@include selection{
+    background: $dark;
+    color: $gold;
+}
 .number{
     font-family:  $font-family-sans-serif;
 }
