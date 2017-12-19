@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>{{pagetitle}}</title>
+    <title>{{about_us}}</title>
     <link rel="stylesheet" href="assets/css/style-{{dir}}.min.css">
     {{>loader}}
 </head> 
@@ -19,8 +19,57 @@
 
 
 {{>pageheader image='about-header.jpg' title=about_us}}
+
+
+<section class="aboutus-sec">
+    <div class="container ">
+        <div class="row pt-5 pb-5 align-items-center">
+            <div class="col-md-5">
+                <img src="assets/img/about-img{{#isequal dir 'rtl'}}-rtl{{/isequal}}.png" alt="" class="img-fluid animate fadeIn"  data-wow-duration="600ms"  data-wow-delay="100ms">
+            </div>
+              <div class="col-md-7">
+                    <h4 class="c-tit gold animate fadeInUp"  data-wow-duration="600ms"  data-wow-delay="100ms"><strong>{{who_are_we}}</strong></h4>
+                  <p class="lead  animate fadeInUp"  data-wow-duration="600ms"  data-wow-delay="200ms">
+                      {{about_us_text}}
+                  </p>
+              </div>
+        </div>
+    </div>
+</section>
+
+<section class="our_vision">
+    <div class="container">
+        <div class="row ">
+            
+              <div class="col-lg-7   vision_text  ">
+                   <div class="d-flex flex-column   justify-content-center">
+                       <h4 class="c-tit dark animate fadeInUp"  data-wow-duration="600ms"  data-wow-delay="100ms"><strong>{{our_vision}}</strong></h4>
+                       <p class="lead  animate fadeInUp"  data-wow-duration="600ms"  data-wow-delay="200ms">
+                        {{our_vision_text}}
+                    </p>
+                   </div>
+              </div>
+
+        </div>
+    </div>
+</section>
+
+<section class="our_mission pt-5 pb-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-10 offset-lg-1 text-center">
+                <i class="fa fa-diamond c-gold animate fadeInUp"  data-wow-duration="600ms"  data-wow-delay="100ms" aria-hidden="true"></i>
+                <h4 class="c-tit dark animate fadeInUp mb-5 c-center"  data-wow-duration="600ms"  data-wow-delay="150ms"><strong>{{our_mission}}</strong></h4>
+                <p class="lead  animate fadeInUp"  data-wow-duration="600ms"  data-wow-delay="200ms">
+                    {{our_mission_text}}
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
 {{>footer}} 
 {{>bottombar}}
 <script src="assets/js/script.min.js"></script> 
-</body> 
+</body>  
 </html>  

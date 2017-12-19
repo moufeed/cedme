@@ -83,33 +83,5 @@
     
 }
  
-.c-tit{
-    color: $white;
-   
-    margin: rem(15px) 0;
-    strong{
-        padding: rem(10px) rem(20px);
-        display: inline-block;
-        
-        position: relative;
-        &:after{
-             
-            content: '';
-            @include absolute(bottom left ,-10px 0);
-            background: url('#{$img}white-line.png');
-            @include size(100% ,10px);
-            opacity: .6;
-        }
-    }
-    &.gold{
-        color: $gold;
-        strong{
-            border-color: $gold;
-            &:after{
-                background: url('#{$img}gold-line.png'); 
-            }
-        }
-    }
-} 
   
  

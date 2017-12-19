@@ -1,0 +1,21 @@
+.aboutus-sec{
+    background:  url('#{$img}dark-ruler-pattern.png') 0 0 repeat-x;
+}
+.our_vision{
+   
+    background: darken($white,5%) url('#{$img}our_vision#{if-rtl(-rtl)}.jpg') if-ltr(100% , 0) 0  / auto 100% no-repeat ;
+     
+    .vision_text{
+       
+        background:  darken($white,5%);
+        .flex-column{
+            min-height: $ourvisionHeight;
+        }
+    }
+}
+
+.our_mission{
+    .fa{
+        font-size: 6em;
+    }
+}

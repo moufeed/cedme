@@ -1,18 +1,19 @@
 
 .services-section {
-    .img-box {
-        @include size(100%, $servicesHeight);
-        @include media-breakpoint-only(md) { 
-           height: 450px;
-        }
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        overflow: hidden;
-        img {
-            height: 100%;
-        }
+    
+}
+.img-box {
+    @include size(100%, $servicesHeight);
+    @include media-breakpoint-only(md) { 
+       height: 450px;
+    }
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    img {
+        height: 100%;
     }
 }
 
