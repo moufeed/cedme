@@ -1,5 +1,6 @@
  .main-navbar{
      background: rgba($black,.6);
+     transition: background-color .5s;
      @include media-breakpoint-down(xs) { 
         background: rgba($black,.8);
     }
@@ -34,7 +35,7 @@
              }
              &.active{
                  >a{
-                     background: rgba($gold,.7);
+                     background:$gold;
                      color: $white;
                  }
              }

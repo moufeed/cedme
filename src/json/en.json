@@ -301,5 +301,13 @@
             "img" :"3.jpg",
             "text":"<ol> <li> <span> Integrated engineering design works (architectural & nbsp; - construction - electricity - mechanical health) and conducted by a group of consultants </ span> </ li> <li> Before construction, and to determine the estimated cost of the engineering projects as well as the implementation schedules, together with the financial flows involved. </ Span> </ li> </ span> </ li> </ li> span> Provide all engineering consultancy and provide innovative solutions for implementation in all types of facilities </ span> </ li> </ ol>"
         }
-    ]
+    ],
+    "project_info":{
+        "title":"Al Rowad International Schools Project",
+        "text":"<ul class='list-unstyled'><li  class='animte fadeIn'  data-wow-duration='600ms'  data-wow-delay='100ms'> <strong> Address </strong> Prince Muqrin Bin Abdul Azir Road </li><li  class='animte fadeIn'  data-wow-duration='600ms'  data-wow-delay='200ms'> <strong> Project Execution Time </strong> Seven months - full key delivery </li><li  class='animte fadeIn'  data-wow-duration='600ms'  data-wow-delay='250ms'> <strong> Project Area </strong>35000 m 2 boys - 15000 m 2 girls - 7000 m 2 management and theater</li></ul>",
+        "img":"main.jpg",
+        "imgs":[
+            "1.jpg","2.jpg","3.jpg","4.jpg","5.jpg","6.jpg","7.jpg","8.jpg","9.jpg"
+        ]
+    }
 }

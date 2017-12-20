@@ -302,5 +302,13 @@
             "img" :"3.jpg",
             "text":"<ol> <li><span>أعمال التصميمات الهندسية المتكاملة (معمارى &nbsp;- إنشائى - كهرباء - ميكانيك صحى ) ويقوم بها مجموعة من المهندسين الاستشاريين</span></li> <li><span>إعداد المقايسات الازمة لمرحلة ما قبل الإنشاء وتحديد القيمة التقديرية لتكلفة المشروعات الهندسية وكذلك الجداول الزمنية للتنفيذ مرفقا بيها التدفقات المالية الازمة لذلك</span></li> <li><span>عمل دراسات الجدوى للمشروعات الهندسية المختلفة</span></li> <li><span>تقديم كافة الاستشارات الهندسية مع تقديم حلول مبتكرة للتنفيذ فى جميع أنواع المنشات</span></li> </ol>"
         }
-    ]
+    ],
+    "project_info":{
+        "title":"مشروع مدارس الرواد العالمية",
+        "text":"<ul class='list-unstyled'><li  class='animte fadeIn'  data-wow-duration='600ms'  data-wow-delay='100ms' ><strong>العنوان</strong> طريق الأمير مقرن بن عبد العزير</li><li  class='animte fadeIn'  data-wow-duration='600ms'  data-wow-delay='200ms'><strong>مدة تفيذ المشروع </strong>  سبعة اشهر  - تسليم مفتاح كامل</li>     <li  class='animte fadeIn'  data-wow-duration='600ms'  data-wow-delay='250ms'><strong>مساحة المشروع</strong><span class='number'>35000</span> م2 بنين - <span class='number'>15000</span>م2 بنات - <span class='number'>7000</span> م2 إدارة ومسرح </li> </ul>",
+        "img":"main.jpg",
+        "imgs":[
+            "1.jpg","2.jpg","3.jpg","4.jpg","5.jpg","6.jpg","7.jpg","8.jpg","9.jpg"
+        ]
+    }
 }

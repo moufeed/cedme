@@ -22,7 +22,7 @@
     figcaption {
         @include absolute( top left , 0 );
         @include square(100%);
-        padding: rem(15px);
+        padding:  rem(40px) rem(30px);
         color: #fff;
         text-transform: uppercase;
         font-size: rem(16px);

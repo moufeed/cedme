@@ -1,6 +1,7 @@
 .topbar{
     background: $black;
     color: $white;
+    
     @include media-breakpoint-down(xs) { 
         .col-6{
             padding: 0 5px;

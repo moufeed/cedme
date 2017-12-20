@@ -113,3 +113,16 @@ ul{
         }
     }
 } 
+
+
+.back-to-top {
+    @include fixed(bottom $right,15px 15px);
+    @include square(40px);
+    background: rgba($gold, .7);
+    color: $dark;
+    font-size: 24px;
+    text-align: center;
+    line-height: 40px;
+    display: none;
+    z-index: 15000;
+}
