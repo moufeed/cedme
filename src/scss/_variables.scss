@@ -20,3 +20,17 @@ $ourvisionHeight : 500px;
 $fa-font-path:        "../fonts/fa" ; 
   
 $font-family-sans-serif: Roboto , -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+
+$pagination-color:                  $dark;
+// $pagination-bg:                     $white !default;
+ 
+// $pagination-border-color:           #ddd !default; 
+
+  $pagination-hover-color:           $white;
+  $pagination-hover-bg:               $gold;
+ $pagination-hover-border-color:     $gold;
+
+ 
+  $pagination-active-bg:               $dark;
+  $pagination-active-border-color:   $dark;
+ 

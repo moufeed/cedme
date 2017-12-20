@@ -1,0 +1,103 @@
+.project-item{
+    box-shadow:  3px 3px 0 0px $white , 6px 6px 0 0px lighten($gold ,20%);
+    position: relative;
+	overflow: hidden;
+	 
+	max-width: 100%;
+	max-height: 360px;
+	height: auto;
+	text-align: center;
+    cursor: pointer;
+    background:$dark;
+    margin-top: 15px;
+    img {
+        position: relative;
+        display: block;
+        min-height: 100%;
+        opacity: 0.9;
+        height: 400px;
+        transition: opacity 1s, transform 1s;
+        backface-visibility: hidden;
+    }
+    figcaption {
+        @include absolute( top left , 0 );
+        @include square(100%);
+        padding: rem(15px);
+        color: #fff;
+        text-transform: uppercase;
+        font-size: rem(16px);
+        backface-visibility: hidden;
+        text-align: $left;
+        >a{
+            @include absolute( top left , 0 );
+            @include square(100%);
+            z-index: 1000;
+            text-indent: 200%;
+            white-space: nowrap;
+            font-size: 0;
+            opacity: 0;
+        }
+        h3 {
+           @include if-ltr{
+            word-spacing: -0.15em;
+           }
+            font-weight: 200;
+            position: relative;
+            padding: 0.5em 0;
+            margin: 0;
+            text-shadow : 1px 1px 0 $dark;
+        }
+        p {
+            letter-spacing: 1px;
+            font-size: 68.5%;
+            margin: 0;
+            display: inline-block;
+            margin: 0 0 0.25em;
+            padding: 0.4em 1em;
+            background: rgba($white,0.9);
+            color: $black;
+            text-transform: none;
+            font-weight: 500;
+            font-size: 75%;
+            transition: opacity 0.35s, transform 0.35s;
+            transform: translate3d(if-ltr(-360px , 360px),0,0);
+            &:first-child {
+                transition-delay: 0.15s;
+            }
+            &:nth-of-type(2) {
+                transition-delay: 0.1s;
+            }
+            &:nth-of-type(3) {
+                transition-delay: 0.05s;
+            }
+        }
+    }
+    &:hover{
+        img {
+            opacity: 0.4;
+            
+            transform: scale3d(1.1,1.1,1);
+        }
+        p{
+            opacity: 1;
+	        transform: translate3d(0,0,0);
+            &:first-child {
+                transition-delay: 0s;
+            }
+            &:nth-of-type(2) {
+                transition-delay: 0.05s;
+            }
+            &:nth-of-type(3) {
+                transition-delay: 0.1s;
+            }
+        }
+    }
+}
+ 
+
+ 
+
+ 
+ 
+ 
+ 

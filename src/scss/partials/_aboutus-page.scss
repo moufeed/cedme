@@ -6,16 +6,39 @@
     background: darken($white,5%) url('#{$img}our_vision#{if-rtl(-rtl)}.jpg') if-ltr(100% , 0) 0  / auto 100% no-repeat ;
      
     .vision_text{
-       
+        position: relative;
+        z-index: 0;
+        &:after{
+            content: '';
+            @include absolute(top $right,0 -15%);
+            @include square(100%);
+            transform: skew(-5deg);
+            background: darken($white,5%);
+            z-index: -1;
+        }
         background:  darken($white,5%);
         .flex-column{
             min-height: $ourvisionHeight;
+            z-index: 0;
+            position: relative;
         }
     }
 }
 
 .our_mission{
-    .fa{
-        font-size: 6em;
+    background: url('#{$img}our_mission.jpg') if-rtl(100% , 0) 0  / auto 100% no-repeat ;
+    .mission_text{
+        position: relative;
+        &:after{
+            content: '';
+            @include absolute(top $left,0 -20%);
+            @include square(100%);
+            transform: skew(-5deg);
+            background: $white;
+        }
+        background: $white;
+        .flex-column{
+            min-height: $ourvisionHeight;
+        }
     }
 }
