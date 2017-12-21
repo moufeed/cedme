@@ -17,9 +17,61 @@
   
  
 
- 
+  
 {{>pageheader image='services-header.jpg' title=our_services}}
-{{>footer}} 
+
+
+ <section class="pt-5 pb-5 service-item-1"> 
+        <div class="container">
+                <div class="row">
+                    <div class="col-md-4 animate fadeIn"  data-wow-duration="600ms"  data-wow-delay="100ms">
+                        <img src="assets/img/services/main-{{our_services_list.0.img}}" class="img-fluid" alt="">
+                    </div>
+                    <div class="col-md-8 animate fadeIn"  data-wow-duration="600ms"  data-wow-delay="200ms">
+                        <h4 class="c-tit">{{our_services_list.0.name}}</h4>
+                        <div>
+                        {{{our_services_list.0.text}}}
+                        </div>
+                    </div>
+                </div>
+        </div>
+ </section>
+
+<section class="pt-5 pb-5 service-item-2">
+        <div class="container">
+                 <div class="row">
+                    <div class="col-md-8 animate fadeIn"  data-wow-duration="600ms"  data-wow-delay="200ms">
+                        <h4 class="c-tit">{{our_services_list.1.name}}</h4>
+                        <div>
+                        {{{our_services_list.1.text}}}
+                        </div>
+                    </div>
+                    <div class="col-md-4 animate fadeIn"  data-wow-duration="600ms"  data-wow-delay="100ms">
+                        <img src="assets/img/services/main-{{our_services_list.1.img}}" class="img-fluid" alt="">
+                    </div>
+                </div>
+        </div>
+ </section>
+
+
+<section class="pt-5 pb-5 service-item-3">
+    <div class="container">
+    <div class="row">
+            
+            <div class="col-md-4 animate fadeIn"  data-wow-duration="600ms"  data-wow-delay="100ms">
+                <img src="assets/img/services/main-{{our_services_list.2.img}}" class="img-fluid" alt="">
+            </div>
+            <div class="col-md-8 animate fadeIn"  data-wow-duration="600ms"  data-wow-delay="200ms">
+                <h4 class="c-tit">{{our_services_list.2.name}}</h4>
+                <div>
+                  {{{our_services_list.2.text}}}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+ 
+{{>footer}}  
 {{>bottombar}}
 <script src="assets/js/script.min.js"></script> 
 </body> 

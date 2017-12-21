@@ -29,12 +29,14 @@
     background: url('#{$img}our_mission.jpg') if-rtl(100% , 0) 0  / auto 100% no-repeat ;
     .mission_text{
         position: relative;
+        z-index: 1;
         &:after{
             content: '';
             @include absolute(top $left,0 -20%);
             @include square(100%);
             transform: skew(-5deg);
             background: $white;
+            z-index: -1;
         }
         background: $white;
         .flex-column{
