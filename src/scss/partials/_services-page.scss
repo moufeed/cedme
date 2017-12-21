@@ -8,20 +8,32 @@
 .service-item-3{
     background: url('#{$img}bg-3.jpg') if-ltr(0,100%) 0 / 34% 100% no-repeat;
 }
- /*
-  <section class="pt-5 pb-5 service-item-1">
-        <div class="container">
-                <div class="row">
-                    <div class="col-md-4 animate fadeIn"  data-wow-duration="600ms"  data-wow-delay="100ms">
-                        <img src="assets/img/services/main-{{our_services_list.0.img}}" class="img-fluid" alt="">
-                    </div>
-                    <div class="col-md-8 animate fadeIn"  data-wow-duration="600ms"  data-wow-delay="200ms">
-                        <h4 class="c-tit">{{our_services_list.0.name}}</h4>
-                        <div>
-                        {{{our_services_list.0.text}}}
-                        </div>
-                    </div>
-                </div>
-        </div>
- </section>
- */
+ 
+.services-items{
+    ul,ol{
+        list-style: none;
+        li{
+            border-radius: 0;
+            padding:rem(10px); 
+            color: lighten($dark,10%);
+             
+                display: block; 
+                position: relative;
+                color: $black;
+                margin-bottom: 15px;
+                &:before{
+                    @include absolute(top $left , 10px -15px);
+                    font-family: FontAwesome;
+                    content :"#{if-ltr('\f101','\f100')}";
+                    color: $orange;
+                }
+                
+            
+        }
+    }
+
+}
+.services-content{
+    background: $white;
+}
+  
