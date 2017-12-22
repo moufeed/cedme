@@ -4,3 +4,13 @@
     z-index: 1500;
     width: 100%; 
 } 
+
+.main-logo{
+    @include absolute(top $left, -40px 0);
+    height: 100px;
+    transition: all .3s;
+    &.fixed{
+        top:4px;
+        height: 60px;
+    }
+}

@@ -17,7 +17,7 @@
 }
 
 .about-des{
-        background: $dark;
+        background: $dark url('#{$img}glogo-bg.png')  110% 280% no-repeat;
         color: $white;
         margin-top: -13px;
     .row-des{

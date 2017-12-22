@@ -1,0 +1,139 @@
+
+.news-section {
+   
+    background-image: url('#{$img}news-bg.jpg') ,url('#{$img}dark-ruler-pattern.png') ,url('#{$img}news-bg.jpg');
+    background-position:    if-ltr(-25% ,125%) 10%, 0 0 ,  if-rtl(-25% ,125%) 80% ;
+    background-repeat: no-repeat,repeat-x, no-repeat;
+}
+.news-item{
+    margin-bottom:rem(25px); 
+    margin-top:rem(25px); 
+    .image{
+        @include size(70%,350px);
+        @include media-breakpoint-down(sm){
+            width: 97%;
+        }
+        @include media-breakpoint-only(md){
+            height: 285px;
+        }
+        overflow: hidden; 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        box-shadow: if-ltr(30px , -30px) 0 0 -20px $gray-400;
+        position:relative;
+        &:after{
+            @include absolute(top $left , 0 0);
+            content: "";
+            background: rgba($dark,.5);
+            @include square(100%);
+            opacity: 0;
+            transition: all .3s;
+        }
+        a{
+            @include absolute(top $left , 0 0);
+            z-index: 15;
+            @include square(100%);
+            font-size: 0;
+            color: transparent;
+        }
+        img{
+            position: relative;
+            min-width: 100%;
+            width: auto;
+            height:100%;
+        }
+        
+    }
+    .info{
+        position: absolute;
+        background: $white;
+        width: 80%;
+        @include media-breakpoint-down(sm){
+            width: 90%;
+        }
+        padding: rem(15px);
+        #{$right} : 0;
+        transition: all .3s;
+        h6{
+             position: relative;
+             &:before{
+                 @include absolute(top $left , 0 if-ltr(-17px , -18px));
+                 content: '';
+                 @include size(3px,100%);
+                 background: $gold;
+                 transition: all .3s;
+             }
+            a{
+                color: $black;
+                @include ellipsis(16px , 1.4 , 2);
+                transition: all .3s;
+                &:hover{
+                    text-decoration: none;
+                }
+
+            }
+           
+            margin-bottom: 0;
+        }
+        span{
+            font-size: 12px;
+            color: $gray-700;
+            transition: all .3s;
+        }
+        p{
+            @include ellipsis(14px , 1.3 , 3);
+            color: $gray-600;
+            margin: 0;
+            transition: all .3s;
+        }
+    }
+    &:hover{
+        .image:after{
+            opacity: 1;
+        }
+        .info{
+            background:$lyellow;
+            span{
+                color: $dark;
+            }
+           p,span{
+            color: $dark;
+           }
+           h6{
+             
+            &:before{
+                 
+                background: $dark;
+            
+            }
+        }
+        }
+    }
+}
+
+/*
+
+<section class="pt-5 pb-5">
+    <div class="container">
+        <div class="row   ">
+            {{#each news_list}}
+                <div class="col-md-6">
+                    <article class="">
+                        <div class="">
+                           <a href="{{link}}"><img src="assets/img/news/{{img}}" alt="{{name}}"> </a> 
+                        </div>
+                        <div class="">
+                            <h5><a href="{{link}}">{{name}}</a></h5>
+                            <>{{date}}</span>
+                            <>{{text}}</p>
+                        </div>
+                    </article>
+                </div> 
+            {{/each}}
+        </div>
+    </div>
+</section>
+
+*/

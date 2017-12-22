@@ -20,7 +20,7 @@ h4,h5,h6{
         font-family: dosis , $font-family-sans-serif;
         text-transform: capitalize;
     }
-    @include if-ltr{
+    @include if-rtl{
         font-family: g-medium , $font-family-sans-serif;
     }
 }

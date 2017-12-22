@@ -4,6 +4,9 @@
      @include media-breakpoint-down(xs) { 
         background: rgba($black,.8);
     }
+    .container{
+        position: relative;
+    }
     .navbar {
         padding: 0;
         @include media-breakpoint-down(xs) { 
@@ -32,6 +35,10 @@
                     background: $gold;
                     color: $white;
                 }
+                &:focus{
+                    color: $white;
+                    outline-color: $gold;
+                }
              }
              &.active{
                  >a{
@@ -39,9 +46,38 @@
                      color: $white;
                  }
              }
+             &.dropdown{
+                 &.show{
+                    >a{
+                        background:$gold;
+                        color: $white; 
+                    }  
+                 }
+                    .dropdown-menu{
+                        border-radius: 0;
+                        a{
+                            transition: all .2s;
+                            &:hover,&:active{
+                                color: $white;
+                                background: $dark;
+                            }
+                        }
+                    }
+                }
             }
         } 
     }
     
  }    
- 
+ /*
+  <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Dropdown link
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </li>
+ */

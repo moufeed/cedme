@@ -17,11 +17,13 @@ $(document).ready(function(){
     $(window).scroll(function () {
         
         if( window.pageYOffset > $('.main-header .topbar').height()){
+            $('.main-logo').addClass('fixed');
             $('.main-header .topbar').css('display','none')
             $('.main-header .main-navbar').css('background','#111')
         }else{
             $('.main-header .topbar').css('display','block');
             $('.main-header .main-navbar').removeAttr('style')
+            $('.main-logo').removeClass('fixed');
         }
         if ($(this).scrollTop() > offset) {
             $(".back-to-top").fadeIn(duration);
