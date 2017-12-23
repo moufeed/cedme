@@ -1,5 +1,5 @@
 .main_footer{
-    background: $mblue url('#{$img}footer-bg.png')  if-rtl(100% ,0 ) 0 no-repeat;
+    background: $mblue url('#{$img}footer-bg#{if-ltr(-ltr)}.png')  if-rtl(100% ,0 ) 0 no-repeat;
     color: $white;
 
     @include media-breakpoint-down(sm) { 
@@ -12,7 +12,7 @@
             max-width: 100%;
         }
     }
-    h4{
+    h4{  
         @include if-rtl{
             font-family:g-bold;
         }

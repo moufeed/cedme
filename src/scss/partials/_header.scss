@@ -13,4 +13,8 @@
         top:4px;
         height: 60px;
     }
+    @include media-breakpoint-down(sm){
+        #{ $left} :auto;
+        #{ $right} :10px;
+    }
 }

@@ -309,5 +309,10 @@
         "imgs":[
             "1.jpg","2.jpg","3.jpg","4.jpg","5.jpg","6.jpg","7.jpg","8.jpg","9.jpg"
         ]
-    }
+    },
+    "blog":{
+    "name" :"Construction contract of Al Manhal School for Boys and Girls",
+    "date" :"Monday, 01 August",
+    "text" :"<p> <p> First party: Al Manhal National Schools Company for Boys </ p> <p> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </ p> <p style ='text-align: justify;'> </ p> <p> </ p> <p style = 'text-align: justify;'> <p> The origin has been delivered in full on schedule and in accordance with the drawings, specifications and technical assets </ p> </ div> > <p> &nbsp; </ p>"
+}
 }

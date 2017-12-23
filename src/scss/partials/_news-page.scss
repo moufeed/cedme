@@ -1,13 +1,12 @@
 
 .news-section {
-   
     background-image: url('#{$img}news-bg.jpg') ,url('#{$img}dark-ruler-pattern.png') ,url('#{$img}news-bg.jpg');
-    background-position:    if-ltr(-25% ,125%) 10%, 0 0 ,  if-rtl(-25% ,125%) 80% ;
+    background-position:  if-ltr( -100px, #{calc( 100% + 100px)} ) 10%, 0 0 ,  if-rtl(-100px , #{calc( 100% + 100px)} ) 80% ;
     background-repeat: no-repeat,repeat-x, no-repeat;
 }
 .news-item{
-    margin-bottom:rem(25px); 
-    margin-top:rem(25px); 
+        margin-bottom:rem(25px); 
+        margin-top:rem(25px);
     .image{
         @include size(70%,350px);
         @include media-breakpoint-down(sm){
@@ -44,7 +43,6 @@
             width: auto;
             height:100%;
         }
-        
     }
     .info{
         position: absolute;
@@ -72,9 +70,7 @@
                 &:hover{
                     text-decoration: none;
                 }
-
             }
-           
             margin-bottom: 0;
         }
         span{
@@ -102,38 +98,10 @@
             color: $dark;
            }
            h6{
-             
             &:before{
-                 
                 background: $dark;
-            
             }
         }
         }
     }
 }
-
-/*
-
-<section class="pt-5 pb-5">
-    <div class="container">
-        <div class="row   ">
-            {{#each news_list}}
-                <div class="col-md-6">
-                    <article class="">
-                        <div class="">
-                           <a href="{{link}}"><img src="assets/img/news/{{img}}" alt="{{name}}"> </a> 
-                        </div>
-                        <div class="">
-                            <h5><a href="{{link}}">{{name}}</a></h5>
-                            <>{{date}}</span>
-                            <>{{text}}</p>
-                        </div>
-                    </article>
-                </div> 
-            {{/each}}
-        </div>
-    </div>
-</section>
-
-*/
